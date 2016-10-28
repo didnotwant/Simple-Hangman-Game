@@ -67,8 +67,6 @@
 
     const clearInput = word => word.toLowerCase();
 
-    randomWord();
-
     return {
       randomWord,
       getSecretWord,

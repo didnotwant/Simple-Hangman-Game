@@ -16,6 +16,8 @@
     const formView = app.FormView(wordModel, livesModel, formController);
     const livesView = app.LivesView(livesModel);
 
+    wordModel.randomWord();
+
     $body.append(scoreboardView.getRootEl());
     $body.append(livesView.getRootEl());
     $body.append(formView.getRootEl());
