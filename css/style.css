@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300&subset=latin,latin-ext);
+
+body {
+  padding: 10px;
+}
+
+body,
+input,
+button {
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+}
+
+.lives {
+  font-size: 150%;
+}
+
+.button {
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  color: #FFFFFF;
+  padding: 10px 25px;
+  background-color: #000080;
+  cursor: pointer;
+  margin-left: -7px;
+}
+.button:hover {
+  background-color: #323299;
+}
+
+.input {
+  padding: 7px;
+  outline: none;
+  border: 1px solid #111;
+}
+.input:focus {
+  box-shadow: 0px 0px 8px 2px #6666b2;
+  border: 1px solid #323299;
+}
+
+.scoreboard {
+  font-family: monospace;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.15);
+  min-height: 4em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #000033;
+  color: #e5e5f2;
+  padding: 10px 25px;
+  box-shadow: 0px 0px 8px 2px #6666b2;
+  border-radius: 7px;
+  font-size: 150%;
+  letter-spacing: 1em;
+  text-indent: 1em;
+}
+
+.lives-container {
+  margin-bottom: 16px;
+}
