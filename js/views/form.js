@@ -4,20 +4,24 @@
   app.FormView = (wordModel, livesModel, formController) => {
     const $rootEl = $(`
       <form class="form">
-        <input type="text"
-               class="input"
-               autocomplete="off"
-               placeholder="Type a letter…"
-               maxlength="1"
-               autofocus>
-        <button class="button">
-          Enter
-        </button>
       </form>
     `);
+    const $input = $(`
+      <input type="text"
+             class="input"
+             autocomplete="off"
+             placeholder="Type a letter…"
+             maxlength="1"
+             autofocus>
+    `);
+    const $button = $(`
+      <button class="button">
+        Enter
+      </button>
+    `);
 
-    const $button = $rootEl.find('.button');
-    const $input = $rootEl.find('.input');
+    $rootEl.append($input);
+    $rootEl.append($button);
 
     $rootEl.on('submit', event => {
       event.preventDefault();

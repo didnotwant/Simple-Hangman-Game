@@ -4,14 +4,19 @@
   app.LivesView = (model, controller) => {
     const $rootEl = $(`
       <div class="lives-container">
-        <span>
-          Lives:
-        </span>
-        <span class="lives"></span>
       </div>
     `);
+    const $title = $(`
+      <span>
+        Lives:
+      </span>
+    `);
+    const $lives = $(`
+      <span class="lives"></span>
+    `);
 
-    const $lives = $rootEl.find('.lives');
+    $rootEl.append($title);
+    $rootEl.append($lives);
 
     const renderLives = () => {
       let livesCount = model.getLivesCount();
